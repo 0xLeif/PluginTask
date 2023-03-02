@@ -2,7 +2,7 @@
 
 *🧩 A Task that supports plugins*
 
-`PluginTask` is a custom `Task` that allows users to add plugins to modify its behavior. Plugins can be added to the `PluginTask` instance to perform additional functionality before or after the task's main operation. This makes it easy to modify the task's behavior without modifying its original implementation.
+`PluginTask` is a custom [`Task`](https://developer.apple.com/documentation/swift/task) that allows users to add plugins to modify its behavior. [Plugins](https://github.com/0xLeif/Plugin) can be added to the `PluginTask` instance to perform additional functionality before or after the task's main operation. This makes it easy to modify the task's behavior without modifying its original implementation.
 
 ## Usage
 
