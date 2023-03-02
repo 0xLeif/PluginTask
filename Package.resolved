@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "fork",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0xLeif/Fork",
+      "state" : {
+        "revision" : "7682617694979adcf1f8b08d1507c865cad81ae4",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "plugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0xLeif/Plugin",
+      "state" : {
+        "revision" : "68839c896af6aeee4ecb1ba885f3605ac6fca3cb",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "t",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/0xOpenBytes/t",
+      "state" : {
+        "revision" : "c111675ac4d84af23d2d9b65bffaf1829c376986",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}
