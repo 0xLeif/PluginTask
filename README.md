@@ -11,7 +11,7 @@
 The `TaskPluginManager` is responsible for managing the plugins that are registered with it. You can create a new `TaskPluginManager` instance by initializing it with an array of `Plugin` instances.
 
 ```swift
-class ImageTaskPluginManager: TaskPluginManager {
+class ImageTaskPluginManager: TaskPluginManager<Void> {
     var image: Image?
 }
 ```
