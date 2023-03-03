@@ -6,6 +6,8 @@ final class PluginTaskTests: XCTestCase {
     func testPluginTask() async throws {
         let operation: Task<Sendable, Error> = PluginTask(
             operation: { manager in
+                // Don't not cancels the task associated with the manager.
+                // Because a `CancelTaskPlugin` is not registered with the manager.
                 try await manager.cancel()
 
                 return Double.pi
@@ -21,10 +23,14 @@ final class PluginTaskTests: XCTestCase {
 
     func testCancelPluginTask() async throws {
         let operation: Task<Sendable, Error> = PluginTask(
-            plugins: [
-                CancelTaskPlugin()
-            ],
+            manager: TaskPluginManager<Sendable>(
+                plugins: [
+                    CancelTaskPlugin()
+                ]
+            ),
             operation: { manager in
+                // Will cancel the task associated with the manager
+                // Because a `CancelTaskPlugin` is registered with the manager.
                 try await manager.cancel()
 
                 return Double.pi

@@ -8,6 +8,9 @@ public struct CancelTaskPlugin: TaskPlugin {
         case cancel
     }
 
+    /// Initializes a new cancel task plugin.
+    public init() { }
+
     /// Handles a payload value.
     ///
     /// If the payload is `.cancel`, this method cancels the task associated with the `output` parameter.
